@@ -7,6 +7,9 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ESlintWebpackPlugin from 'eslint-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
+// Optimization
+import CompressionPlugin from 'compression-webpack-plugin';
+
 import { Configuration as WebpackConfiguration, ProvidePlugin } from 'webpack';
 import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
 
@@ -16,7 +19,6 @@ interface Configuration extends WebpackConfiguration {
 
 const config: Configuration = {
   // Where files should be sent once they are bundled
-  devtool: 'eval-source-map',
   output: {
     path: path.join(__dirname, '/docs'),
     filename: 'index.bundle.js',
@@ -82,6 +84,14 @@ const config: Configuration = {
     // For better JSX support
     new ProvidePlugin({
       React: 'react',
+    }),
+
+    // For optimization
+    new CompressionPlugin({
+      algorithm: 'gzip',
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8,
     }),
   ],
 };

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 // Constants
-import * as ROUTES from '../../router/routes';
+import { HOME, WORKS, POSTS } from '../../router/routes';
 
 const Header = () => {
   return (
@@ -9,13 +9,13 @@ const Header = () => {
       <nav className="nav">
         <ul className="list">
           <li className="list__item">
-            <Link to={ROUTES.ABOUT}>About</Link>
+            <Link to={HOME}>About</Link>
           </li>
           <li className="list__item">
-            <Link to={ROUTES.WORKS}>Works</Link>
+            <Link to={WORKS}>Works</Link>
           </li>
           <li className="list__item">
-            <Link to={ROUTES.POSTS}>Posts</Link>
+            <Link to={POSTS}>Posts</Link>
           </li>
         </ul>
       </nav>
