@@ -22,7 +22,7 @@ const config: Configuration = {
   output: {
     path: path.join(__dirname, '/docs'),
     chunkFilename: '[id].index.bundle.js',
-    publicPath: '/docs',
+    publicPath: '/',
     filename: 'index.bundle.js',
   },
   // webpack 5 comes with devServer which loads in development mode
