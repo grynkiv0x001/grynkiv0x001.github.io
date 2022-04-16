@@ -21,7 +21,7 @@ const config: Configuration = {
   // Where files should be sent once they are bundled
   output: {
     path: path.join(__dirname, '/docs'),
-    chunkFilename: '[id].index.bundle.js',
+    chunkFilename: 'docs[id].index.bundle.js',
     publicPath: '/',
     filename: 'index.bundle.js',
   },
