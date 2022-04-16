@@ -16,14 +16,18 @@ interface Configuration extends WebpackConfiguration {
 
 const config: Configuration = {
   // Where files should be sent once they are bundled
+  devtool: 'eval-source-map',
   output: {
     path: path.join(__dirname, '/docs'),
     filename: 'index.bundle.js',
+    publicPath: '/',
   },
   // webpack 5 comes with devServer which loads in development mode
   devServer: {
     port: 3000,
     hot: true, // Live-reload
+    open: true, // Open server in a browser automatically
+    historyApiFallback: true, // Enable react-router
     client: {
       overlay: {
         errors: true, // Display error on page
@@ -32,7 +36,6 @@ const config: Configuration = {
       logging: 'warn', // Disable console logs from webpack
       reconnect: true, // Reconnect after error fixed etc.
     },
-    open: true, // Open server in a browser automatically
   },
   // Rules of how webpack will take our files, complie & bundle them for the browser
   module: {
