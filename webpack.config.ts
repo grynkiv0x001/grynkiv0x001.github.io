@@ -21,8 +21,9 @@ const config: Configuration = {
   // Where files should be sent once they are bundled
   output: {
     path: path.join(__dirname, '/docs'),
-    filename: 'index.bundle.js',
+    chunkFilename: '[id].index.bundle.js',
     publicPath: 'auto',
+    filename: 'index.bundle.js',
   },
   // webpack 5 comes with devServer which loads in development mode
   devServer: {
@@ -87,12 +88,12 @@ const config: Configuration = {
     }),
 
     // For optimization
-    new CompressionPlugin({
-      algorithm: 'gzip',
-      test: /\.js$|\.css$|\.html$/,
-      threshold: 10240,
-      minRatio: 0.8,
-    }),
+    // new CompressionPlugin({
+    //   algorithm: 'gzip',
+    //   test: /\.js$|\.css$|\.html$/,
+    //   threshold: 10240,
+    //   minRatio: 0.8,
+    // }),
   ],
 };
 
