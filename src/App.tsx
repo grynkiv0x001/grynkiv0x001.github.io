@@ -1,7 +1,9 @@
+import Home from './pages/Home';
+
 import './App.scss';
 
 const App = () => {
-  return <div className="container">Hello, World!</div>;
+  return <Home />;
 };
 
 export default App;
