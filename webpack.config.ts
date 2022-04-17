@@ -17,7 +17,10 @@ interface Configuration extends WebpackConfiguration {
   devServer?: WebpackDevServerConfiguration;
 }
 
+// List of important html pages
 const htmlPageNames = ['404'];
+
+// Dynamic handle of multiple html pages
 const multipleHtmlPlugins = htmlPageNames.map((name) => {
   return new HtmlWebpackPlugin({
     template: `./public/${name}.html`, // relative path to the HTML files
@@ -69,6 +72,10 @@ const config: Configuration = {
       {
         test: /\.(scss|css)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'], // MiniCss for optimization
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
