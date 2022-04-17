@@ -17,6 +17,15 @@ interface Configuration extends WebpackConfiguration {
   devServer?: WebpackDevServerConfiguration;
 }
 
+const htmlPageNames = ['404'];
+const multipleHtmlPlugins = htmlPageNames.map((name) => {
+  return new HtmlWebpackPlugin({
+    template: `./public/${name}.html`, // relative path to the HTML files
+    filename: `${name}.html`, // output HTML files
+    chunks: [`${name}.bundle`], // respective JS files
+  });
+});
+
 const config: Configuration = {
   // Where files should be sent once they are bundled
   output: {
@@ -94,7 +103,7 @@ const config: Configuration = {
     //   threshold: 10240,
     //   minRatio: 0.8,
     // }),
-  ],
+  ].concat(multipleHtmlPlugins),
 };
 
 export default config;
