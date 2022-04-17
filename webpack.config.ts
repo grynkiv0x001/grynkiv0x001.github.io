@@ -7,6 +7,9 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ESlintWebpackPlugin from 'eslint-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
+// Optimization
+import CompressionPlugin from 'compression-webpack-plugin';
+
 import { Configuration as WebpackConfiguration, ProvidePlugin } from 'webpack';
 import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
 
@@ -14,13 +17,25 @@ interface Configuration extends WebpackConfiguration {
   devServer?: WebpackDevServerConfiguration;
 }
 
+// List of important html pages
+const htmlPageNames = ['404'];
+
+// Dynamic handle of multiple html pages
+const multipleHtmlPlugins = htmlPageNames.map((name) => {
+  return new HtmlWebpackPlugin({
+    template: `./public/${name}.html`, // relative path to the HTML files
+    filename: `${name}.html`, // output HTML files
+    chunks: [`${name}.bundle`], // respective JS files
+  });
+});
+
 const config: Configuration = {
   // Where files should be sent once they are bundled
-  devtool: 'eval-source-map',
   output: {
-    path: path.join(__dirname, '/docs'),
-    filename: 'index.bundle.js',
+    path: path.join(__dirname, '/build'),
+    chunkFilename: '[id].bundle.js',
     publicPath: '/',
+    filename: 'index.bundle.js',
   },
   // webpack 5 comes with devServer which loads in development mode
   devServer: {
@@ -58,6 +73,10 @@ const config: Configuration = {
         test: /\.(scss|css)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'], // MiniCss for optimization
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   resolve: {
@@ -83,7 +102,15 @@ const config: Configuration = {
     new ProvidePlugin({
       React: 'react',
     }),
-  ],
+
+    // For optimization
+    // new CompressionPlugin({
+    //   algorithm: 'gzip',
+    //   test: /\.js$|\.css$|\.html$/,
+    //   threshold: 10240,
+    //   minRatio: 0.8,
+    // }),
+  ].concat(multipleHtmlPlugins),
 };
 
 export default config;
