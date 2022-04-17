@@ -20,7 +20,7 @@ interface Configuration extends WebpackConfiguration {
 const config: Configuration = {
   // Where files should be sent once they are bundled
   output: {
-    path: path.join(__dirname, '/docs'),
+    path: path.join(__dirname, '/build'),
     chunkFilename: '[id].bundle.js',
     publicPath: '/',
     filename: 'index.bundle.js',

@@ -10,7 +10,7 @@ const root = createRoot(container!);
 
 root.render(
   <StrictMode>
-    <BrowserRouter basename="/grynkiv0x001.github.io">
+    <BrowserRouter basename="/">
       <App />
     </BrowserRouter>
   </StrictMode>
