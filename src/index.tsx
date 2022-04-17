@@ -5,12 +5,12 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
 
-const container = document.getElementById('app');
+const container = document.getElementById('root');
 const root = createRoot(container!);
 
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/grynkiv0x001.github.io">
       <App />
     </BrowserRouter>
   </StrictMode>

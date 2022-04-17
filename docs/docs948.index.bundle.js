@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgrynkiv0x001_github_io=self.webpackChunkgrynkiv0x001_github_io||[]).push([[948],{948:(e,s,t)=>{t.r(s),t.d(s,{default:()=>n});var i=t(294);const n=function(){return i.createElement("div",{className:"posts"},"Posts")}}}]);

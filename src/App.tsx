@@ -12,7 +12,7 @@ import './App.scss';
 
 const App = () => {
   return (
-    <>
+    <div className="app">
       <Header />
       <Routes>
         {routes.map((route: RouteType, index: number) => {
@@ -31,7 +31,7 @@ const App = () => {
           );
         })}
       </Routes>
-    </>
+    </div>
   );
 };
 
