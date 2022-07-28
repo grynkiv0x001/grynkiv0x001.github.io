@@ -1,2 +1,2 @@
-body{margin:0;padding:0}
+.header{background-color:#f9b4cb;position:relative;width:100%;display:flex;justify-content:end;font-family:monospace;font-size:22px;border-bottom:2px solid black}.header__link{color:#000;font:inherit;text-decoration:none;position:relative}.header__link::before{border:2px solid #fff;content:' ';width:12px;height:100%;opacity:0;position:absolute;left:-2px;transition:0.3s opacity ease}.header__link:hover::before{opacity:1}body{margin:0;padding:0}
 

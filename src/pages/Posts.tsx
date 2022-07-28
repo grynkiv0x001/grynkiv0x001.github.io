@@ -1,4 +1,4 @@
-import { Container, Heading, Text, Tab } from '../components/shared';
+import { Container, Heading, Tab, Text } from '../components/shared';
 
 const Posts = () => {
   return (
