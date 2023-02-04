@@ -1,15 +1,9 @@
-import path from 'path';
-
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-
 // Error checking and linting
 import ESlintWebpackPlugin from 'eslint-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
-
-// Optimization
-import CompressionPlugin from 'compression-webpack-plugin';
-
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import path from 'path';
 import { Configuration as WebpackConfiguration, ProvidePlugin } from 'webpack';
 import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
 
@@ -33,7 +27,7 @@ const config: Configuration = {
   // Where files should be sent once they are bundled
   output: {
     path: path.join(__dirname, '/build'),
-    chunkFilename: '[id].bundle.js',
+    chunkFilename: '[name].bundle.js', // chunk name (can be 'id' or 'name')
     publicPath: '/',
     filename: 'index.bundle.js',
   },
@@ -81,6 +75,9 @@ const config: Configuration = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      '@': path.resolve(__dirname, 'src/'),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './public/index.html' }),

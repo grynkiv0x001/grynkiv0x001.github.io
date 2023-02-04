@@ -1,9 +1,9 @@
 import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { RouteType } from './core/_types/RouteType';
-import routes from './router/routes';
-import { Header } from './components';
+import { Header } from '@/components';
+import { RouteType } from '@/core/_types/RouteType';
+import routes from '@/router/routes';
 
 import './App.scss';
 

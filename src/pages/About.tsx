@@ -1,4 +1,4 @@
-import { Container, Heading } from '../components/shared';
+import { Container, Heading } from '@/components/shared';
 
 const About = () => {
   return (

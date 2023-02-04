@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 // Constants
-import { HOME, POSTS, WORKS } from '../../router/routes';
+import { HOME, POSTS, WORKS } from '@/router/routes';
 
 const Nav = styled.div`
   padding: 20px 35px 0;

@@ -4,6 +4,7 @@ export const HOME = '/';
 export const ABOUT = '/about';
 export const WORKS = '/works';
 export const POSTS = '/posts';
+export const RESUME = '/resume';
 
 const routes = [
   {
@@ -21,7 +22,11 @@ const routes = [
     exact: true,
     element: lazy(() => import('../pages/Posts')),
   },
-  ,
+  {
+    path: RESUME,
+    exact: true,
+    element: lazy(() => import('../pages/Resume')),
+  },
 ];
 
 export default routes;

@@ -39,7 +39,7 @@ export const Text = styled.p`
   }
 `;
 
-export const Tab = styled.div`
+export const Tab = styled.span`
   display: inline-block;
   width: 1em;
 `;
