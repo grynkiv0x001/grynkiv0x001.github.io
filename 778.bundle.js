@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgrynkiv0x001_github_io=self.webpackChunkgrynkiv0x001_github_io||[]).push([[778],{778:(e,n,t)=>{t.r(n),t.d(n,{default:()=>l});var u=t(294);const l=function(){return u.createElement("div",null,u.createElement("h1",null,"Resume"),u.createElement("p",null,"Resume page body content"))}}}]);
