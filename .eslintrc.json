@@ -23,9 +23,12 @@
     "react/jsx-props-no-spreading": "off",
     "react/no-danger": "off",
     "react/require-default-props": "off",
+    "no-trailing-spaces": "error",
     "import/prefer-default-export": "off",
     "no-shadow": "off",
-    "react/button-has-type": "off"
+    "react/button-has-type": "off",
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
   },
   "settings": {
     "react": {
