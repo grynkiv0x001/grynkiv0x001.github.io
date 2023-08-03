@@ -1,0 +1,19 @@
+{
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "^@/components(.*)$": "<rootDir>/src/components$1",
+    "^@/pages(.*)$": "<rootDir>/src/pages$1",
+    "^@/helpers(.*)$": "<rootDir>/src/helpers$1",
+    "^@/assets(.*)$": "<rootDir>/src/assets$1",
+    "^@/core(.*)$": "<rootDir>/src/core$1",
+    "^@/router(.*)$": "<rootDir>/src/router$1",
+    "^@/config(.*)$": "<rootDir>/src/config$1",
+    "^@/hooks(.*)$": "<rootDir>/src/hooks$1",
+    "\\.(css|scss)$": "<rootDir>/test/jest/__mocks__/styleMock.js"
+  },
+  "preset": "ts-jest/presets/default-esm",
+  "testEnvironment": "jsdom",
+  "setupFilesAfterEnv": [
+    "@testing-library/jest-dom/extend-expect"
+  ]
+}

@@ -33,7 +33,7 @@ const config: Configuration = {
   },
   // webpack 5 comes with devServer which loads in development mode
   devServer: {
-    port: 3000,
+    port: 'auto',
     hot: true, // Live-reload
     open: true, // Open server in a browser automatically
     historyApiFallback: true, // Enable react-router
