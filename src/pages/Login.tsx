@@ -17,14 +17,14 @@ const Login = () => {
 
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-          const user = userCredential.user;
-          navigate(HOME);
-          console.log(user);
+        const user = userCredential.user;
+        navigate(HOME);
+        console.log(user);
       })
       .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          console.error(errorCode, errorMessage);
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.error(errorCode, errorMessage);
       });
   };
 
