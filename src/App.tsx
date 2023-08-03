@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { onAuthStateChanged,User } from 'firebase/auth';
+import { onAuthStateChanged, User } from 'firebase/auth';
 
 import { Header } from '@/components';
 import { RouteType } from '@/core/_types/RouteType';
