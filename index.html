@@ -11,6 +11,28 @@
       rel="stylesheet"
     />
     <title>Bohdan Hrynkiv - Portfolio</title>
+    <script>
+      (function () {
+        const theme = localStorage.getItem('theme') || 'auto';
+        const root = document.documentElement;
+
+        if (theme === 'auto') {
+          const prefersDark = window.matchMedia(
+            '(prefers-color-scheme: dark)',
+          ).matches;
+
+          if (prefersDark) {
+            root.classList.add('dark');
+          } else {
+            root.classList.remove('dark');
+          }
+        } else if (theme === 'dark') {
+          root.classList.add('dark');
+        } else {
+          root.classList.remove('dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
