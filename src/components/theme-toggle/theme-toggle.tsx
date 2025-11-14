@@ -24,7 +24,7 @@ export const ThemeToggle = () => {
 
   return (
     <button
-      className="theme-toggle inline-flex items-center justify-center p-2.5 md:p-2 rounded-md transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-400 dark:focus:ring-slate-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 touch-manipulation min-w-[44px] min-h-[44px] md:min-w-0 md:min-h-0 cursor-pointer"
+      className="theme-toggle inline-flex items-center justify-center p-2.5 md:p-2 rounded-md transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-800 touch-manipulation min-w-[44px] min-h-[44px] md:min-w-0 md:min-h-0 cursor-pointer"
       type="button"
       onClick={cycleTheme}
     >

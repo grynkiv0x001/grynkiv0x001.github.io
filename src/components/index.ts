@@ -8,3 +8,4 @@ export * from './achievements';
 export * from './footer';
 export * from './contact-button';
 export * from './theme-toggle';
+export * from './resume-download';

@@ -36,7 +36,7 @@ export const Header = () => (
         </div>
       </div>
 
-      <div className="hidden lg:flex items-start justify-end gap-4 text-right">
+      <div className="hidden lg:flex items-start justify-end gap-4">
         <ThemeToggle />
       </div>
     </div>
