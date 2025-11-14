@@ -4,11 +4,11 @@ export const Skills = () => (
       <div className="md:col-span-1 lg:col-span-1">
         <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Skills</h3>
       </div>
-      
+
       <div className="md:col-span-1 lg:col-span-2">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
-            <h4 className="font-semibold mb-2 text-sm md:text-base">Frontend</h4>
+            <h4 className="font-semibold mb-2 text-sm md:text-base">Core</h4>
             <ul className="space-y-1 text-sm md:text-base">
               <li>JavaScript</li>
               <li>TypeScript</li>
@@ -18,14 +18,24 @@ export const Skills = () => (
               <li>Vue.js</li>
             </ul>
           </div>
-          
+
           <div>
-            <h4 className="font-semibold mb-2 text-sm md:text-base">Styling & Tools</h4>
+            <h4 className="font-semibold mb-2 text-sm md:text-base">Frontend</h4>
             <ul className="space-y-1 text-sm md:text-base">
               <li>Tailwind CSS</li>
               <li>SCSS</li>
               <li>HTML</li>
               <li>GraphQL</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-2 text-sm md:text-base">Backend</h4>
+            <ul className="space-y-1 text-sm md:text-base">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
             </ul>
           </div>
         </div>

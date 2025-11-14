@@ -6,3 +6,4 @@ export * from './header';
 export * from './skills';
 export * from './achievements';
 export * from './footer';
+export * from './contact-button';
