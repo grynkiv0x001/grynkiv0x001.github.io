@@ -22,16 +22,12 @@ export const Experience = () => (
               </div>
             </div>
             <p className="text-sm md:text-base">
-              Delivered major UI features for a financial web app serving 2 users across multiple
-              EU countries, using React, TypeScript, and Next.js.
-              Translated wireframes and UI specs into fully responsive, production-quality components
-              using Emotion, shipping 10+ reusable components for the design system.
-              Designed and implemented a Strapi-based CMS to manage static pages and blog
-              content, reducing content deployment time by 60%.
-              Led a successful front-end migration between card-issuing providers with zero downtime,
-              affecting all active users.
-              Conducted code reviews and contributed to internal UI best practices, improving code
-              quality and team velocity.
+              I currently contribute to the core features of a financial web application that serving millions of users across multiple EU countries.
+              Working with React, TypeScript, and Next.js, I translate wireframes and design specifications into fully responsive, production-ready components using Emotion.
+              I've shipped over 10 reusable components that now form part of our design system.
+              One of my major achievements was designing and implementing a Strapi-based CMS that manages our static pages and blog content, reducing content deployment time by 60%.
+              I also led a critical front-end migration between card-issuing providers that affected all active users while maintaining zero downtime.
+              In addition to developing features, I conduct code reviews and help establish UI best practices, improving both code quality and team velocity.
             </p>
           </li>
 
@@ -48,16 +44,11 @@ export const Experience = () => (
               </div>
             </div>
             <p className="text-sm md:text-base">
-              Built and maintained a multi-language Learning Management System (LMS) serving
-              200K+ users across multiple European countries.
-              Implemented and maintained a custom design system and Storybook component library
-              with 40+ reusable components for UI consistency.
-              Created responsive layouts and themes using Tailwind CSS and CSS Modules,
-              supporting 5+ languages and multiple country-specific configurations.
-              Optimized React Admin dashboards, improving loading performance by 40% and
-              reducing bundle size by 25%.
-              Collaborated directly with designers and backend teams using GraphQL + Apollo Client,
-              integrating API endpoints for seamless data flow.
+              I built and maintained a multi-language Learning Management System serving over 200,000 users across Europe.
+              I focused on creating a cohesive user experience through a custom design system and Storybook component library containing 40+ reusable components.
+              Using Tailwind CSS and CSS Modules, I developed responsive layouts and themes that support multiple projects and multiple country-specific configurations.
+              I focused heavily on performance optimization, improving React Admin dashboard loading times by 40%.
+              Working closely with designers and backend teams, I've integrated GraphQL and Apollo Client to ensure seamless data flow throughout the application.
             </p>
           </li>
 
@@ -74,14 +65,9 @@ export const Experience = () => (
               </div>
             </div>
             <p className="text-sm md:text-base">
-              Developed and maintained applications across B2B, Real Estate, and E-commerce
-              sectors, contributing to 5+ production applications.
-              Promoted from Junior Developer to Frontend Developer within 18 months, leading squads
-              of 2-3 frontend engineers on key initiatives.
-              Implemented real-time features using Firebase, Redux Saga, and WebSocket APIs,
-              enabling live collaboration for 5K+ concurrent users.
-              Led the frontend architecture of a U.S. B2B platform serving enterprise clients, defining
-              routing, authentication flows, and scalable UI patterns.
+              I developed and maintained applications across B2B, Real Estate, and E-Commerce sectors, contributing to over five production applications.
+              My growth was rapid – I was promoted from Junior Developer to Frontend Developer within 18 months and went on to lead small teams of 2-3 frontend engineers on key initiatives.
+              I implemented real-time features using Firebase, Redux Saga, and WebSocket APIs that enabled live collaboration for thousands concurrent users.
             </p>
           </li>
         </ul>

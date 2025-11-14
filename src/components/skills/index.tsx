@@ -24,6 +24,8 @@ export const Skills = () => (
             <ul className="space-y-1 text-sm md:text-base">
               <li>Tailwind CSS</li>
               <li>SCSS</li>
+              <li>Emotion</li>
+              <li>Storybook</li>
               <li>HTML</li>
               <li>GraphQL</li>
             </ul>

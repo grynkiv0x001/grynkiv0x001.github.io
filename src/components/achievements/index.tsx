@@ -8,7 +8,7 @@ export const Achievements = () => (
       <div className="md:col-span-1 lg:col-span-2">
         <ul className="space-y-2 text-sm md:text-base">
           <li>
-            I am interested in music production and playing guitar. Let me know if you want to jam/collaborate :)
+            I'm interested in music production and playing guitar. Let me know if you want to jam/collaborate :)
           </li>
           <li>
             I like adventures and exploring new places.
