@@ -1,6 +1,6 @@
 export const Experience = () => (
   <section className="lg:ml-10">
-    <main className="lg:grid lg:grid-cols-3 lg:gap-4">
+    <main className="md:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
       <div />
       <div>
         <h3 className="mb-4 text-4xl">Experience</h3>
@@ -32,7 +32,7 @@ export const Experience = () => (
           </li>
         </ul>
       </div>
-      <div />
+      <div className="md:hidden" />
     </main>
   </section>
 );

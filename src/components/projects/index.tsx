@@ -8,21 +8,21 @@ export const Projects = () => (
         <li className="flex flex-col lg:flex-row gap-1">
           <a
             href="https://github.com/grynkiv0x001/vi-kanban"
-            className="underline underline-offset-2"
+            className="underline underline-offset-2 lg:whitespace-nowrap"
           >
             Vi-kanban
           </a>
-          <p className="hidden lg:blog">-</p>
+          <p className="hidden lg:block">-</p>
           <p>React based kanban app with focus on keyboard shortcuts and Vim support.</p>
         </li>
-        <li className="flex gap-1">
+        <li className="flex flex-col lg:flex-row gap-1">
           <a
             href="https://github.com/grynkiv0x001/pomodoro-vue"
-            className="underline underline-offset-2"
+            className="underline underline-offset-2 lg:whitespace-nowrap"
           >
             Pomodoro Vue
           </a>
-          <p className="hidden lg:blog">-</p>
+          <p className="hidden lg:block">-</p>
           <p>Simple pomodoro timer using Vue 3.</p>
         </li>
       </ul>
