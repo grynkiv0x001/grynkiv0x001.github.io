@@ -16,9 +16,9 @@ export const Header = () => (
       <div className="md:col-span-1 lg:col-span-1 flex items-start justify-between md:justify-between">
         <ul className="space-y-1 text-sm md:text-base">
           <ContactLink
-            text="+1 (312) 292-84345"
-            href="tel:+131229284345"
-            copyText="+131229284345"
+            text="+1 (312) 292-8434"
+            href="tel:+13122928434"
+            copyText="+13122928434"
             hasCopyIcon
             isListItem
           />
